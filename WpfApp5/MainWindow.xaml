@@ -8,9 +8,7 @@
         Title="MainWindow" Height="650" Width="1000">
 	<Grid Background="#FF373737">
 		<Grid ClipToBounds="True" HorizontalAlignment="Center" VerticalAlignment="Top" Width="780" Height="210" Margin="0,60,0,0" Background="#FF969696">
-			<Rectangle Height="150" Stroke="Black" Width="210" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="25,0,0,0" Fill="#FFDEDEDE"/>
-			<Rectangle Height="150" Stroke="Black" Width="210" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="285,0,0,0" Fill="#FFDEDEDE"/>
-			<Rectangle Height="150" Stroke="Black" Width="210" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="545,0,0,0" Fill="#FFDEDEDE"/>
+			
 		</Grid>
 		<Rectangle Height="210" Canvas.Left="0" Stroke="#FFD4C30C" Canvas.Top="0" Width="780" StrokeThickness="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0"/>
 
