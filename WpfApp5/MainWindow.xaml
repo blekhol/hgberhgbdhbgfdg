@@ -8,11 +8,16 @@
         Title="MainWindow" Height="650" Width="1000">
 	<Grid Background="#FF373737">
 		<Grid ClipToBounds="True" HorizontalAlignment="Center" VerticalAlignment="Top" Width="780" Height="210" Margin="0,60,0,0" Background="#FF969696">
-			
+			<Canvas x:Name="tarcsa1" Width="260" HorizontalAlignment="Left" Margin="0,0,0,0">
+			</Canvas>
+			<Canvas x:Name="tarcsa2" Width="260" HorizontalAlignment="Left" Margin="260,0,0,0">
+			</Canvas>
+			<Canvas x:Name="tarcsa3" Width="260" HorizontalAlignment="Left" Margin="520,0,0,0">
+			</Canvas>
 		</Grid>
 		<Rectangle Height="210" Canvas.Left="0" Stroke="#FFD4C30C" Canvas.Top="0" Width="780" StrokeThickness="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0"/>
 
-		<Button Content="Goldgoldgold" HorizontalAlignment="Left" Margin="830,468,0,0" VerticalAlignment="Top" Height="64" Width="106" Background="#FFD4C30C"/>
+		<Button x:Name="gold" Content="Goldgoldgold" HorizontalAlignment="Left" Margin="830,468,0,0" VerticalAlignment="Top" Height="64" Width="106" Background="#FFD4C30C" Click="gold_Click"/>
 
 
 
