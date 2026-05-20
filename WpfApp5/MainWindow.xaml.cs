@@ -65,8 +65,15 @@ namespace WpfApp5
 		private void gold_Click(object sender, RoutedEventArgs e)
 		{
 			var mozgatasAnim = new DoubleAnimation();
-			mozgatasAnim.From = 1.0;
-			mozgatasAnim.To = 0.0;
+			mozgatasAnim.From = 0.0;
+			mozgatasAnim.To = 100.0;
+			mozgatasAnim.Duration = new Duration(TimeSpan.FromSeconds(3));
+
+			var storyboard = new Storyboard();
+			storyboard.Children.Add(mozgatasAnim);
+			Storyboard.SetTarget(mozgatasAnim, tarcsa1);
+			Storyboard.SetTargetProperty(mozgatasAnim, new PropertyPath(Canvas.TopProperty));
+			storyboard.Begin(this);
 		}
 	}
 }
