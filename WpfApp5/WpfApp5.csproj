@@ -9,8 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\bf_gamma.png" />
+    <None Remove="Images\bowie_auto.png" />
     <None Remove="Images\dlore.png" />
     <None Remove="Images\goldgoldgold.png" />
+    <None Remove="Images\karambit_ch.png" />
+    <None Remove="Images\karambit_doppler.png" />
+    <None Remove="Images\m9_fade.png" />
     <None Remove="Images\mac10heat.png" />
     <None Remove="Images\nip.png" />
     <None Remove="Images\titanholo.png" />
@@ -18,8 +23,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\bf_gamma.png" />
+    <Resource Include="Images\bowie_auto.png" />
     <Resource Include="Images\dlore.png" />
     <Resource Include="Images\goldgoldgold.png" />
+    <Resource Include="Images\karambit_ch.png" />
+    <Resource Include="Images\karambit_doppler.png" />
+    <Resource Include="Images\m9_fade.png" />
     <Resource Include="Images\mac10heat.png" />
     <Resource Include="Images\nip.png" />
     <Resource Include="Images\titanholo.png" />

@@ -5,21 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="1000">
-	<Grid Background="#FF373737">
-		<Grid ClipToBounds="True" HorizontalAlignment="Center" VerticalAlignment="Top" Width="780" Height="210" Margin="0,60,0,0" Background="#FF969696">
-			<Canvas x:Name="tarcsa1" Width="260" HorizontalAlignment="Left" Margin="0,0,0,0">
-			</Canvas>
-			<Canvas x:Name="tarcsa2" Width="260" HorizontalAlignment="Left" Margin="260,0,0,0">
-			</Canvas>
-			<Canvas x:Name="tarcsa3" Width="260" HorizontalAlignment="Left" Margin="520,0,0,0">
-			</Canvas>
-		</Grid>
-		<Rectangle Height="210" Canvas.Left="0" Stroke="#FFD4C30C" Canvas.Top="0" Width="780" StrokeThickness="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0"/>
+        Title="Slot Machine" Height="650" Width="1000">
+    <Grid Background="#FF222222">
 
-		<Button x:Name="gold" Content="Goldgoldgold" HorizontalAlignment="Left" Margin="830,468,0,0" VerticalAlignment="Top" Height="64" Width="106" Background="#FFD4C30C" Click="gold_Click"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Orientation="Horizontal">
+            <TextBlock x:Name="txtEgyenleg" Text="Egyenleg: 100 kredit" Foreground="Gold" FontSize="24" FontWeight="Bold" Margin="0,0,40,0"/>
+            <TextBlock x:Name="txtEredmeny" Text="" Foreground="White" FontSize="24" FontWeight="Bold" Width="300" TextAlignment="Center"/>
+        </StackPanel>
 
+        <Grid ClipToBounds="True" HorizontalAlignment="Center" VerticalAlignment="Top" Width="600" Height="450" Margin="0,80,0,0" Background="#FF111111">
 
+            <Canvas x:Name="tarcsa1" Width="200" HorizontalAlignment="Left">
+                <Canvas.RenderTransform>
+                    <TranslateTransform x:Name="trans1" Y="0"/>
+                </Canvas.RenderTransform>
+            </Canvas>
 
-	</Grid>
+            <Canvas x:Name="tarcsa2" Width="200" HorizontalAlignment="Left" Margin="200,0,0,0">
+                <Canvas.RenderTransform>
+                    <TranslateTransform x:Name="trans2" Y="0"/>
+                </Canvas.RenderTransform>
+            </Canvas>
+
+            <Canvas x:Name="tarcsa3" Width="200" HorizontalAlignment="Left" Margin="400,0,0,0">
+                <Canvas.RenderTransform>
+                    <TranslateTransform x:Name="trans3" Y="0"/>
+                </Canvas.RenderTransform>
+            </Canvas>
+
+            <Line X1="0" Y1="225" X2="600" Y2="225" Stroke="Red" StrokeThickness="5" Opacity="0.85" VerticalAlignment="Top"/>
+        </Grid>
+
+        <Rectangle Height="450" Stroke="Gold" Width="600" StrokeThickness="4" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,80,0,0" IsHitTestVisible="False"/>
+
+        <Button x:Name="gold" Content="PÖRGETÉS (10)" HorizontalAlignment="Center" Margin="0,550,0,0" VerticalAlignment="Top" Height="50" Width="180" Background="Gold" FontSize="18" FontWeight="Bold" Foreground="Black" Click="gold_Click"/>
+    </Grid>
 </Window>
